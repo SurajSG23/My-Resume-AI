@@ -13,9 +13,7 @@ https://github.com/user-attachments/assets/00a85661-6552-4dd2-8d2e-4610e7162291
 - **Print Support**: Users can print their resumes directly with consistent styling.
 - **Dynamic Form Handling**:
   - Add professional experiences, projects, skills, and education details.
-  - Limited entries for structured data input (e.g., up to three experiences).
 - **Customizable Themes**: Change resume theme colors to match user preferences.
-- **Device Restriction Alert**: Displays a message to use a desktop or laptop for optimal performance.
 - **User-Friendly Interface**: Intuitive design for effortless resume creation.
   
 ## Technologies Used
