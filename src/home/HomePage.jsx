@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/custom/Header";
 import { Link } from "react-router-dom";
 import { useUser } from "@clerk/clerk-react";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const HomePage = () => {
   const { user, isSignedIn } = useUser();
@@ -38,6 +39,28 @@ const HomePage = () => {
           </div>
           <div className="absolute top-10 left-5 w-20 h-20 rounded-full bg-blue-500 opacity-50 blur-xl animate-bounce"></div>
           <div className="absolute bottom-20 right-10 w-32 h-32 rounded-full bg-purple-600 opacity-50 blur-2xl animate-pulse"></div>
+          <footer className="w-full bg-black py-4 mt-8 flex items-center justify-between text-gray-400 px-8 absolute bottom-0">
+            <div>&copy; 2024 MyResume.ai. All Rights Reserved.</div>
+            <div className="flex gap-4">
+              <p></p>
+              <a
+                href="https://www.instagram.com/suraj_sg23/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-pink-500 hover:scale-110"
+              >
+                @Suraj_sg23
+              </a>
+              <a
+                href="https://www.linkedin.com/in/suraj-s-g-dhanva-995a23298/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-blue-500 hover:scale-110"
+              >
+                <FaLinkedin size={24} />
+              </a>
+            </div>
+          </footer>
         </div>
       ) : (
         <div className="h-[92vh] flex flex-col items-center justify-center text-center bg-gradient-to-br from-purple-900 via-gray-900 to-black relative">
@@ -57,6 +80,28 @@ const HomePage = () => {
           </div>
           <div className="absolute top-16 left-10 w-28 h-28 rounded-full bg-blue-500 opacity-50 blur-3xl animate-pulse"></div>
           <div className="absolute bottom-10 right-16 w-36 h-36 rounded-full bg-purple-600 opacity-50 blur-3xl animate-bounce"></div>
+          <footer className="w-full bg-black py-4 mt-8 flex items-center justify-between text-gray-400 px-8 absolute bottom-0">
+            <div>&copy; 2024 MyResume.ai. All Rights Reserved.</div>
+            <div className="flex gap-4">
+              <p></p>
+              <a
+                href="https://www.instagram.com/suraj_sg23/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-pink-500 hover:scale-110"
+              >
+                @Suraj_sg23
+              </a>
+              <a
+                href="https://www.linkedin.com/in/suraj-s-g-dhanva-995a23298/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-blue-500 hover:scale-110"
+              >
+                <FaLinkedin size={24} />
+              </a>
+            </div>
+          </footer>
         </div>
       )}
     </>
