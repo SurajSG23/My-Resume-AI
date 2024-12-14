@@ -1,8 +1,9 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Button } from "../../../components/ui/button";
 import { ResumeInfoContext } from "../../../context/ResumeInfoContext";
 
 const CertificatesForm = () => {
+  
   const { resumeInfo, setResumeInfo } = useContext(ResumeInfoContext);
   const [certificate, setCertificate] = useState({
     title: "",

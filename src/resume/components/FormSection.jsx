@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import PersonalForm from "./form/PersonalForm";
 import { Button } from "/src/components/ui/button";
@@ -13,7 +13,7 @@ import EducationForm from "./form/EducationForm";
 import { ResumeInfoContext } from "../../context/ResumeInfoContext";
 import * as Dialog from "@radix-ui/react-dialog";
 
-const FormSection = () => {
+const FormSection = ({ setPageCount }) => {
   const location = useLocation();
   const { resumeTitle } = location.state || { resumeTitle: "" };
   const [activeFormIndex, setActiveFormIndex] = useState(1);
@@ -28,7 +28,6 @@ const FormSection = () => {
       },
     });
   };
-
   const displayComponent = (index) => {
     switch (index) {
       case 1:
@@ -46,7 +45,7 @@ const FormSection = () => {
       case 7:
         return <LangAndHobbiesForm />;
       case 8:
-        return <CertificatesForm />;
+        return <CertificatesForm setPageCount={setPageCount} />;
       default:
         return null;
     }

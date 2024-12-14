@@ -56,14 +56,14 @@ const SkillsForm = () => {
         </div>
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
-            Proficiency (0-100)
+            Proficiency (30-100)
           </label>
           <input
             type="number"
             name="score"
             value={skill.score}
             onChange={handleInputChange}
-            min="0"
+            min="30"
             max="100"
             placeholder="Enter proficiency (e.g., 80)"
             className="w-full p-3 border rounded-lg text-gray-700 border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"

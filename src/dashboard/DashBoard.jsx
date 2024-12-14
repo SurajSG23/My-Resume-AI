@@ -14,7 +14,7 @@ const DashBoard = () => {
         }}
       >
         <h2 className="text-4xl font-extrabold text-white drop-shadow-lg leading-snug">
-          My Resume
+          Choose your template
         </h2>
         <p className="text-lg text-gray-300  max-w-2xl">
           Create your AI-powered, ATS-friendly <b>Resume</b>. Use cutting-edge

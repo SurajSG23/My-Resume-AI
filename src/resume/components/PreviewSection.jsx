@@ -9,7 +9,7 @@ import Skills from "./preview/Skills";
 import LangAndHobbies from "./preview/LangAndHobbies";
 import Certificates from "./preview/Certificates";
 
-const PreviewSection = ({ printResume }) => {
+const PreviewSection = () => {
   const { resumeInfo } = useContext(ResumeInfoContext);
 
   return (
