@@ -75,7 +75,6 @@ const Edit = () => {
     printWindow.document.write(`
       <html>
         <head>
-          <title>Print Resume</title>
           <style>
             ${styles}
           </style>
