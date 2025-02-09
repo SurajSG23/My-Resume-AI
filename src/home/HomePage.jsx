@@ -65,7 +65,7 @@ const HomePage = () => {
       ) : (
         <div className="h-[92vh] flex flex-col items-center justify-center text-center bg-gradient-to-br from-purple-900 via-gray-900 to-black relative">
           <h1 className="text-5xl font-extrabold text-white drop-shadow-lg leading-snug">
-            Welcome Back, {user.firstName || "User"}!
+            Welcome, {user.firstName || "User"}!
           </h1>
           <p className="text-lg text-gray-300 mt-4 max-w-2xl">
             Dive back into building your professional, AI-powered resume.
