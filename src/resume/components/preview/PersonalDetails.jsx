@@ -24,21 +24,23 @@ const PersonalDetails = ({ resumeInfo }) => {
         {resumeInfo.personalInfo.linkedin && (
           <>
             <p>|</p>
-            <p
+            <a href={resumeInfo.personalInfo.linkedin}
+            target="_blank"
               className="text-blue-500"
             >
-              {resumeInfo.personalInfo.linkedin}
-            </p>
+              Linkedin
+            </a>
           </>
         )}
         {resumeInfo.personalInfo.github && (
           <>
             <p>|</p>
-            <p
+            <a href={resumeInfo.personalInfo.github}
+            target="_blank"
               className="text-blue-500"
             >
-              {resumeInfo.personalInfo.github}
-            </p>
+              Github
+            </a>
           </>
         )}
         {resumeInfo.personalInfo.portfolio && (
