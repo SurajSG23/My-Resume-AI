@@ -2,7 +2,6 @@
 
 ## Overview
 This project is a comprehensive, AI-powered resume builder application designed to create professional resumes seamlessly. It allows users to input their details and instantly preview their resumes, while integrating intelligent features like key point generation.
-<<<<<<< HEAD
 
 ## Demo:
 
@@ -22,4 +21,3 @@ https://github.com/user-attachments/assets/00a85661-6552-4dd2-8d2e-4610e7162291
 - **Context Management**: React Context API
 - **UI Components**: Reusable Button components
 - **AI**: Integration for content optimization
-=======
